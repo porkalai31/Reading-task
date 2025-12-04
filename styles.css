@@ -1,0 +1,161 @@
+/* styles.css - single stylesheet used by both pages */
+
+/* Fonts used: Poppins, Playfair Display, Varela Round */
+:root{
+  --brand-blue: #23408F;
+  --muted-gray: #686666;
+  --grid-line: #B9B9B9;
+  --alt-bg: #E9ECF4;
+  --btn-color: #EC6B5E;
+}
+
+/* Basic resets */
+body{
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: #222;
+  background: #fff;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* small title */
+.small-title{
+  font-family: "Poppins", sans-serif;
+  font-weight:600;
+  font-size:16px;
+  line-height:23px;
+  text-transform:uppercase;
+  letter-spacing:3%;
+  color: #666;
+}
+
+/* small-title dark variant */
+.small-title.dark {
+  color:#333;
+}
+
+/* medium title */
+.medium-title{
+  font-family:"Poppins", sans-serif;
+  font-weight:600;
+  font-size:24px;
+  line-height:28px;
+  letter-spacing:1%;
+  color: var(--brand-blue);
+  margin-bottom:6px;
+}
+
+/* big title (Freeman-like) */
+.big-title{
+  font-family: "Playfair Display", serif;
+  font-weight:400;
+  font-size:50px;
+  line-height:52px;
+  color: var(--brand-blue);
+  margin:0;
+}
+
+/* list text */
+.list-text {
+  font-family: "Poppins", sans-serif;
+  font-weight:400;
+  font-size:16px;
+  line-height:1.75;
+}
+
+/* grid/table */
+.grid-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width:100%;
+  table-layout:fixed;
+  border:1px solid var(--grid-line);
+}
+
+.grid-table td{
+  padding:14px 12px;
+  border-right:1px solid var(--grid-line);
+  border-bottom:1px solid var(--grid-line);
+  font-size:18px;
+  line-height:30px;
+  font-family: "Poppins", sans-serif;
+  vertical-align: middle;
+  background: #ffffff;
+  word-wrap:break-word;
+}
+
+/* remove right border on last column cells */
+.grid-table td:last-child{
+  border-right:0;
+}
+
+/* alternate row background */
+.grid-table tr.alt td{
+  background: var(--alt-bg);
+}
+
+/* input and small controls below table */
+.subheading{
+  font-family: "Poppins", sans-serif;
+  font-weight:600;
+  font-size:20px;
+  line-height:22px;
+  margin-bottom:6px;
+}
+
+.small-input{
+  background:#F4F4F4;
+  border:1px solid #686666;
+  border-radius:10px;
+  padding:10px 12px;
+}
+
+/* buttons */
+.btn-orange{
+  background: var(--btn-color);
+  color: #fff;
+  border: none;
+  padding:10px 18px;
+  border-radius:6px;
+  min-width:80px;
+  min-height:44px;
+}
+
+.btn-outline-secondary{
+  min-width:80px;
+  min-height:44px;
+}
+
+/* page2 body */
+.apprentice-body{
+  max-width:670px;
+  padding-right:20px;
+  font-family: "Varela Round", "Poppins", sans-serif;
+}
+
+.para{
+  font-size:16px;
+  line-height:1.75;
+  margin-bottom:12px;
+}
+
+/* footer small */
+footer.small {
+  font-size:13px;
+  color:#777;
+}
+
+/* responsive tweaks */
+@media (max-width: 767.98px) {
+  .big-title{
+    font-size:34px;
+    line-height:38px;
+  }
+  .apprentice-body{
+    padding-right:0;
+  }
+  .grid-table td{
+    padding:10px;
+    font-size:16px;
+  }
+}
+
